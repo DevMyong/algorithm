@@ -7,7 +7,7 @@ def solution(s):
             idx = i
             break
 
-    return ''.join(ss[idx:] + ss[:idx])
+    return ''.join(ss[idx:]) + str(sum(map(int, ss[:idx])))
 
 
 if __name__ == "__main__":
